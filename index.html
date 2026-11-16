@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f2ec">
+  <meta name="description" content="Một lời mời nhỏ, dành cho những người đặc biệt.">
+  <title>Thư mời — Một ngày đặc biệt</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="opening" id="opening">
+    <div class="opening-topline"><span>AN INVITATION</span><span class="topline-dot"></span><span>MADE WITH CARE</span></div>
+    <div class="opening-center">
+      <p class="eyebrow" id="coverEyebrow">MỘT LỜI MỜI NHỎ</p>
+      <h1 class="opening-title">Có một điều<br><em>muốn gửi đến bạn.</em></h1>
+      <p class="opening-hint">Chạm vào phong thư để mở nhé</p>
+
+      <button class="envelope-button" id="openLetter" type="button" aria-label="Mở phong thư">
+        <span class="envelope-shadow"></span>
+        <span class="envelope" id="envelope">
+          <span class="envelope-letter"><span class="letter-mini-title">A LITTLE INVITATION</span><span class="letter-mini-line"></span><span class="letter-mini-line short"></span></span>
+          <span class="envelope-back"></span>
+          <span class="envelope-front"></span>
+          <span class="envelope-flap"></span>
+          <span class="wax-seal">✳</span>
+        </span>
+      </button>
+      <button class="open-text-button" id="openTextButton" type="button">MỞ THƯ <span aria-hidden="true">↗</span></button>
+    </div>
+    <div class="opening-bottomline"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 / 05</span></div>
+  </header>
+
+  <main id="mainContent" class="main-content">
+    <section class="section letter-section" id="letterSection">
+      <div class="section-index">01 <span>— THE LETTER</span></div>
+      <div class="letter-paper reveal">
+        <div class="paper-top"><span>GỬI ĐẾN</span><span class="paper-star">✳</span></div>
+        <p class="letter-greeting" id="letterGreeting">Thân gửi bạn,</p>
+        <h2 class="letter-heading">Sẽ vui hơn<br>khi có <em>bạn ở đó.</em></h2>
+        <div class="letter-copy" id="letterCopy">
+          <p>Có những dịp trở nên đáng nhớ không phải vì điều gì quá lớn lao, mà bởi những người mình được gặp và những khoảnh khắc được sẻ chia.</p>
+          <p>Mình muốn dành một ngày thật đặc biệt để gặp gỡ, trò chuyện và lưu lại vài kỷ niệm đẹp. Và mình rất mong bạn sẽ có mặt.</p>
+        </div>
+        <div class="letter-signoff"><span>Thân mến,</span><strong id="hostSignature">Người gửi lời mời</strong></div>
+        <div class="paper-bottom"><span>WITH LOVE</span><span>✳</span><span id="letterYear">2026</span></div>
+      </div>
+      <div class="scroll-note"><span class="scroll-note-line"></span>CUỘN XUỐNG ĐỂ XEM CHI TIẾT</div>
+    </section>
+
+    <section class="section event-section" id="eventSection">
+      <div class="section-index">02 <span>— THE DETAILS</span></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">SAVE THE DATE</p>
+        <h2>Một ngày<br><em>để gặp nhau.</em></h2>
+        <p class="section-intro">Mình đã chuẩn bị một buổi gặp mặt nho nhỏ. Đây là những thông tin bạn cần biết.</p>
+      </div>
+      <div class="event-card reveal">
+        <div class="event-card-top"><span>THE GATHERING</span><span class="tiny-star">✳</span></div>
+        <h3 id="eventName">Một buổi gặp mặt thân mật</h3>
+        <div class="event-details-grid">
+          <div class="event-detail"><span class="detail-label">NGÀY</span><strong id="eventDateText">20 tháng 12, 2026</strong></div>
+          <div class="event-detail"><span class="detail-label">THỜI GIAN</span><strong id="eventTimeText">18:00</strong></div>
+          <div class="event-detail event-location"><span class="detail-label">ĐỊA ĐIỂM</span><strong id="eventLocation">Địa điểm tổ chức</strong><span id="eventAddress">Địa chỉ sẽ được cập nhật</span></div>
+        </div>
+        <a class="text-link map-link" id="mapLink" href="#" target="_blank" rel="noopener noreferrer">XEM BẢN ĐỒ <span>↗</span></a>
+      </div>
+      <div class="countdown-wrap reveal" id="countdownWrap">
+        <p class="eyebrow">COUNTING DOWN</p>
+        <div class="countdown" aria-label="Đếm ngược đến sự kiện">
+          <div><strong id="days">--</strong><span>NGÀY</span></div>
+          <i></i>
+          <div><strong id="hours">--</strong><span>GIỜ</span></div>
+          <i></i>
+          <div><strong id="minutes">--</strong><span>PHÚT</span></div>
+          <i></i>
+          <div><strong id="seconds">--</strong><span>GIÂY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallerySection">
+      <div class="section-index">03 <span>— LITTLE MOMENTS</span></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">A FEW MEMORIES</p>
+        <h2>Những điều<br><em>muốn lưu giữ.</em></h2>
+        <p class="section-intro">Một vài khung hình nhỏ. Bạn có thể thay bằng ảnh của mình trong thư mục <code>images</code>.</p>
+      </div>
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-item-large reveal" type="button" data-full-image="images/moment-01.svg" aria-label="Xem ảnh kỷ niệm 1"><img src="images/moment-01.svg" alt="Khung ảnh kỷ niệm số 1"><span class="image-caption">01 / THE BEGINNING</span></button>
+        <button class="gallery-item gallery-item-offset reveal" type="button" data-full-image="images/moment-02.svg" aria-label="Xem ảnh kỷ niệm 2"><img src="images/moment-02.svg" alt="Khung ảnh kỷ niệm số 2"><span class="image-caption">02 / GOOD TIMES</span></button>
+        <button class="gallery-item gallery-item-wide reveal" type="button" data-full-image="images/moment-03.svg" aria-label="Xem ảnh kỷ niệm 3"><img src="images/moment-03.svg" alt="Khung ảnh kỷ niệm số 3"><span class="image-caption">03 / TOGETHER</span></button>
+      </div>
+      <p class="gallery-footnote">NHỮNG KHOẢNH KHẮC ĐẸP LUÔN ĐÁNG ĐƯỢC GIỮ LẠI.</p>
+    </section>
+
+    <section class="section guestbook-section" id="guestbookSection">
+      <div class="section-index">04 <span>— THE GUESTBOOK</span></div>
+      <div class="section-heading reveal">
+        <p class="eyebrow">LEAVE A LITTLE NOTE</p>
+        <h2>Để lại một<br><em>dòng lưu bút.</em></h2>
+        <p class="section-intro">Bạn sẽ đến chứ? Hãy để lại tên và một lời nhắn. Mọi người đều có thể đọc những lời chúc tại đây.</p>
+      </div>
+
+      <div class="guestbook-layout">
+        <form class="guestbook-form reveal" id="guestbookForm">
+          <label for="guestName">TÊN CỦA BẠN</label>
+          <input id="guestName" name="name" type="text" maxlength="40" placeholder="Ví dụ: Minh Anh" autocomplete="name" required>
+          <label for="guestMessage">LỜI NHẮN / LỜI CHÚC</label>
+          <textarea id="guestMessage" name="message" rows="4" maxlength="300" placeholder="Viết vài dòng dễ thương nhé..." required></textarea>
+          <div class="form-bottom"><span id="messageCounter">0 / 300</span><button class="submit-button" id="submitGuestbook" type="submit">GỬI LỜI NHẮN <span>↗</span></button></div>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite">Đang chuẩn bị sổ lưu bút…</p>
+        </form>
+        <div class="guestbook-entries-wrap reveal">
+          <div class="entries-heading"><span>NHỮNG LỜI NHẮN</span><span id="entryCount">0 LỜI NHẮN</span></div>
+          <div class="guestbook-entries" id="guestbookEntries" aria-live="polite">
+            <div class="empty-entries"><span>✳</span><p>Lời nhắn đầu tiên<br>sẽ bắt đầu từ bạn.</p></div>
+          </div>
+        </div>
+      </div>
+      <p class="guestbook-note">Vui lòng viết lời nhắn lịch sự. Nội dung gửi lên sẽ hiển thị công khai trên trang thiệp.</p>
+    </section>
+
+    <section class="closing-section" id="closingSection">
+      <div class="closing-mark">✳</div>
+      <p class="eyebrow">UNTIL WE MEET</p>
+      <h2>Hẹn gặp<br><em>bạn nhé.</em></h2>
+      <p class="closing-copy">Cảm ơn bạn đã dành thời gian đọc đến cuối lá thư này.<br>Sự hiện diện của bạn sẽ làm ngày hôm ấy trọn vẹn hơn.</p>
+      <span class="closing-signature" id="closingHost">— Người gửi lời mời</span>
+      <div class="closing-footer"><span>MADE WITH CARE</span><span>✳</span><span id="footerYear">2026</span></div>
+    </section>
+  </main>
+
+  <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false" aria-label="Bật nhạc nền" hidden>
+    <span class="music-icon" aria-hidden="true">♫</span><span class="music-label" id="musicLabel">BẬT NHẠC</span><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  </button>
+  <audio id="backgroundMusic" src="music/lofi-original.wav" loop preload="none"></audio>
+
+  <dialog class="image-dialog" id="imageDialog" aria-label="Ảnh phóng to">
+    <button class="dialog-close" id="closeImageDialog" type="button" aria-label="Đóng ảnh">×</button>
+    <img id="dialogImage" src="" alt="Ảnh phóng to">
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
