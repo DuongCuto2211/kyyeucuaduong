@@ -4,21 +4,21 @@
 */
 window.INVITATION_CONFIG = {
   // Nội dung hiển thị
-  coverEyebrow: "CÓ MỘT CHIẾC HẸN NÈ",
-  greeting: "Này bạn ơi,",
-  hostName: "Tên bạn",
-  eventName: "Một buổi tụ tập nho nhỏ",
+  coverEyebrow: "MỘT LỜI MỜI NHỎ",
+  greeting: "Thân gửi bạn,",
+  hostName: "Tên người mời",
+  eventName: "Một buổi gặp mặt thân mật",
   letterParagraphs: [
-    "Dạo này mỗi đứa một việc, lâu lâu mới có dịp ngồi lại với nhau. Nghĩ cũng nhớ những lần cả nhóm tụ tập, nói chuyện trên trời dưới đất rồi cười mãi không thôi.",
-    "Thế nên mình muốn rủ mọi người gặp nhau một hôm, ăn uống, tám chuyện và chụp thêm vài tấm hình làm kỷ niệm. Không cần gì cầu kỳ đâu, chỉ cần mọi người có mặt là vui rồi. Nhớ đến nha!"
+    "Có những dịp trở nên đáng nhớ không phải vì điều gì quá lớn lao, mà bởi những người mình được gặp và những khoảnh khắc được sẻ chia.",
+    "Mình muốn dành một ngày thật đặc biệt để gặp gỡ, trò chuyện và lưu lại vài kỷ niệm đẹp. Và mình rất mong bạn sẽ có mặt."
   ],
 
   // THAY các giá trị mẫu bên dưới bằng thông tin sự kiện thật
   eventDateISO: "2026-12-20T18:00:00+07:00", // định dạng YYYY-MM-DDTHH:mm:ss+07:00
-  dateLabel: "20 tháng 12, 2026", // Ngày minh họa — nhớ đổi thành ngày thật
+  dateLabel: "20 tháng 12, 2026",
   timeLabel: "18:00",
-  locationName: "Chỗ hẹn của tụi mình",
-  address: "Thêm địa chỉ cụ thể vào đây nha",
+  locationName: "Địa điểm tổ chức",
+  address: "Địa chỉ sẽ được cập nhật",
   mapUrl: "", // Dán link Google Maps vào giữa hai dấu ngoặc kép
 
   // Ảnh: thay file trong images hoặc sửa đường dẫn ở đây
