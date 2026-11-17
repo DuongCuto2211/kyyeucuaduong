@@ -5,21 +5,21 @@
 window.INVITATION_CONFIG = {
   // Nội dung hiển thị
   coverEyebrow: "MỘT LỜI MỜI NHỎ",
-  greeting: "Thân gửi bạn,",
-  hostName: "Tên người mời",
-  eventName: "Một buổi gặp mặt thân mật",
+  greeting: "Thân gửi,",
+  hostName: "duongcuto2211",
+  eventName: "Buổi Kỷ Yếu Nho Nhỏ Của Dương",
   letterParagraphs: [
-    "Có những dịp trở nên đáng nhớ không phải vì điều gì quá lớn lao, mà bởi những người mình được gặp và những khoảnh khắc được sẻ chia.",
-    "Mình muốn dành một ngày thật đặc biệt để gặp gỡ, trò chuyện và lưu lại vài kỷ niệm đẹp. Và mình rất mong bạn sẽ có mặt."
+    "Đời người có được mấy lần tí.",
+    "nhớ đi nhé!!!!."
   ],
 
   // THAY các giá trị mẫu bên dưới bằng thông tin sự kiện thật
-  eventDateISO: "2026-12-20T18:00:00+07:00", // định dạng YYYY-MM-DDTHH:mm:ss+07:00
-  dateLabel: "20 tháng 12, 2026",
-  timeLabel: "18:00",
-  locationName: "Địa điểm tổ chức",
-  address: "Địa chỉ sẽ được cập nhật",
-  mapUrl: "", // Dán link Google Maps vào giữa hai dấu ngoặc kép
+  eventDateISO: "2026-11-29T18:00:00+07:00", // định dạng YYYY-MM-DDTHH:mm:ss+07:00
+  dateLabel: "29 tháng 11, 2026",
+  timeLabel: "9:00",
+  locationName: "Địa điểm chụp ảnh",
+  address: "Trường THPT Cẩm Lý",
+  mapUrl: "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+THPT+C%E1%BA%A9m+L%C3%BD/@21.2193859,106.3683307,17z/data=!3m1!4b1!4m6!3m5!1s0x31357ac76b275837:0x6e9da6024c88506!8m2!3d21.2193809!4d106.3709056!16s%2Fg%2F1v1tkkcn?hl=vi&entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D", // Dán link Google Maps vào giữa hai dấu ngoặc kép
 
   // Ảnh: thay file trong images hoặc sửa đường dẫn ở đây
   galleryImages: [
