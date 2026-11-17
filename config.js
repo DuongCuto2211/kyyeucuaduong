@@ -42,6 +42,6 @@ window.INVITATION_CONFIG = {
   Chỉ dùng Publishable key (hoặc anon key cũ), TUYỆT ĐỐI không dùng secret/service_role key.
 */
 window.SUPABASE_CONFIG = {
-  url: "",
-  publishableKey: ""
+  url: "https://rxyjaeqayxlsrmkgfnot.supabase.co/rest/v1/",
+  publishableKey: "sb_publishable_FBI9BJUGhi6pUOr7qoIDqg_65FtRpzz"
 };
