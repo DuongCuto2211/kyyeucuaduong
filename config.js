@@ -23,13 +23,13 @@ window.INVITATION_CONFIG = {
 
   // Ảnh: thay file trong images hoặc sửa đường dẫn ở đây
   galleryImages: [
-    "images/moment-01.svg",
-    "images/moment-02.svg",
-    "images/moment-03.svg"
+    "images/moment-01.jpg",
+    "images/moment-02.jpg",
+    "images/moment-03.jpg"
   ],
 
   // Nhạc: mặc định là bản lofi nguyên bản có sẵn trong thư mục music
-  musicPath: "music/lofi-original.wav"
+  musicPath: "music/lofi-original.mp3"
 };
 
 /*
