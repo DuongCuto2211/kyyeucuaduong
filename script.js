@@ -86,8 +86,8 @@
     } catch (error) {
       musicToggle.classList.remove("is-playing");
       musicToggle.setAttribute("aria-pressed", "false");
-      musicLabel.textContent = "BẬT NHẠC";
-      showToast("Chưa phát được nhạc. Kiểm tra file trong thư mục music nhé.");
+      musicLabel.textContent = "BẬT NHẠC NHA";
+      showToast("Nhạc chưa phát được, thử bật lại nha.");
     }
   }
 
@@ -112,7 +112,7 @@
       musicToggle.classList.remove("is-playing");
       musicToggle.setAttribute("aria-pressed", "false");
       musicToggle.setAttribute("aria-label", "Bật nhạc nền");
-      musicLabel.textContent = "BẬT NHẠC";
+      musicLabel.textContent = "BẬT NHẠC NHA";
     }
   });
 
@@ -182,23 +182,23 @@
     const submitButton = $("#submitGuestbook");
 
     if (!url || !key) {
-      status.textContent = "Sổ lưu bút chưa kết nối. Chủ thiệp cần điền Supabase URL và Publishable key trong config.js.";
+      status.textContent = "Sổ lưu bút chưa mở. Người làm thiệp cần kết nối Supabase trong file config.js trước nhé.";
       submitButton.disabled = true;
       return;
     }
     if (!window.supabase || typeof window.supabase.createClient !== "function") {
-      status.textContent = "Không tải được thư viện lưu bút. Hãy kiểm tra kết nối Internet rồi tải lại trang.";
+      status.textContent = "Chưa mở được sổ lưu bút. Bạn thử kiểm tra mạng rồi tải lại trang nha.";
       submitButton.disabled = true;
       return;
     }
 
     try {
       supabaseClient = window.supabase.createClient(url, key);
-      status.textContent = "Sổ lưu bút đã sẵn sàng. Hãy để lại một lời nhắn nhé!";
+      status.textContent = "Sổ lưu bút sẵn sàng rồi, viết vài dòng cho cả hội nha!";
       loadGuestbook();
     } catch (error) {
       console.error("Supabase initialization error:", error);
-      status.textContent = "Thông tin kết nối Supabase chưa hợp lệ. Hãy kiểm tra lại config.js.";
+      status.textContent = "Sổ lưu bút chưa kết nối đúng. Người làm thiệp kiểm tra lại config.js nhé.";
       submitButton.disabled = true;
     }
   }
@@ -221,7 +221,7 @@
       const icon = document.createElement("span");
       icon.textContent = "✳";
       const copy = document.createElement("p");
-      copy.textContent = "Lời nhắn đầu tiên\nsẽ bắt đầu từ bạn.";
+      copy.textContent = "Chưa có ai mở hàng cả...\nBạn viết đầu tiên nha!";
       empty.append(icon, copy);
       container.appendChild(empty);
       return;
@@ -256,10 +256,10 @@
         .limit(50);
       if (error) throw error;
       renderGuestbook(data || []);
-      status.textContent = "Sổ lưu bút đã cập nhật.";
+      status.textContent = "Đã cập nhật lời nhắn mới nhất.";
     } catch (error) {
       console.error("Guestbook loading error:", error);
-      status.textContent = "Chưa đọc được lưu bút. Hãy kiểm tra bảng guestbook và chính sách RLS trong Supabase.";
+      status.textContent = "Chưa đọc được lời nhắn. Người làm thiệp kiểm tra lại phần Supabase nha.";
     }
   }
 
@@ -277,39 +277,39 @@
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
       if (!supabaseClient) {
-        showToast("Sổ lưu bút chưa được kết nối.");
+        showToast("Sổ lưu bút chưa sẵn sàng. Báo người gửi thiệp kiểm tra nha.");
         return;
       }
 
       const name = nameInput.value.trim();
       const message = messageInput.value.trim();
       if (name.length < 1 || name.length > 40 || message.length < 1 || message.length > 300) {
-        showToast("Tên tối đa 40 ký tự, lời nhắn tối đa 300 ký tự nhé.");
+        showToast("Tên tối đa 40 ký tự, lời nhắn tối đa 300 ký tự nha.");
         return;
       }
       if (/https?:\/\/|www\./i.test(`${name} ${message}`)) {
-        showToast("Vui lòng không chèn đường link vào lời nhắn.");
+        showToast("Mình không nhận đường link trong lời nhắn nha.");
         return;
       }
 
       submitButton.disabled = true;
       submitButton.textContent = "ĐANG GỬI…";
-      $("#formStatus").textContent = "Đang gửi lời nhắn của bạn…";
+      $("#formStatus").textContent = "Đang gửi lời nhắn, chờ xíu nha…";
       try {
         const { error } = await supabaseClient.from("guestbook").insert({ name, message });
         if (error) throw error;
         form.reset();
         counter.textContent = "0 / 300";
-        $("#formStatus").textContent = "Đã gửi lời nhắn. Cảm ơn bạn nhé!";
-        showToast("Lời nhắn đã được lưu. Cảm ơn bạn!");
+        $("#formStatus").textContent = "Gửi được rồi nè, cảm ơn bạn nha!";
+        showToast("Lời nhắn đã lên sổ rồi. Cảm ơn bạn nha!");
         await loadGuestbook();
       } catch (error) {
         console.error("Guestbook insert error:", error);
-        $("#formStatus").textContent = "Gửi chưa thành công. Kiểm tra kết nối hoặc cấu hình Supabase rồi thử lại.";
-        showToast("Chưa gửi được. Hãy thử lại sau nhé.");
+        $("#formStatus").textContent = "Chưa gửi được lời nhắn. Bạn kiểm tra mạng rồi thử lại nha.";
+        showToast("Chưa gửi được mất rồi, thử lại sau nha.");
       } finally {
         submitButton.disabled = false;
-        submitButton.innerHTML = 'GỬI LỜI NHẮN <span>↗</span>';
+        submitButton.innerHTML = 'GỬI NHA <span>↗</span>';
       }
     });
   }

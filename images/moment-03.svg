@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 790">
+<defs><pattern id="paper" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M0 19.5H20" stroke="#aa8c6b" stroke-opacity=".12"/></pattern></defs>
+<rect width="1400" height="790" fill="#e8dcc9"/><rect width="1400" height="790" fill="url(#paper)"/>
+<path d="M105 100q0-22 25-22h1140q25 0 25 22v590q0 22-25 22H130q-25 0-25-22Z" fill="#fff9ed" stroke="#c8b394" stroke-width="3"/>
+<path d="m510 80 170 0 12 68-170 0Z" fill="#c7a77f" opacity=".48"/><path d="M245 255q90-100 180 0t180 0 180 0 180 0 180 0" fill="none" stroke="#aa765b" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 20"/>
+<g fill="#b47b5d" stroke="#8f654c" stroke-width="3"><path d="M350 340c-40-80-110-55-72 15 40 70 72-15 72-15Z"/><path d="M350 340c40-80 110-55 72 15-40 70-72-15-72-15Z"/></g><path d="M350 350v95m-30-35q-38-25-60-8m90 5q38-25 60-8" stroke="#8a8b65" stroke-width="7" fill="none" stroke-linecap="round"/>
+<g transform="translate(1050 390)" fill="none" stroke="#9b795b" stroke-width="7" stroke-linecap="round"><path d="M-70 0q70-90 140 0-70 90-140 0Z"/><path d="M-25 0q25-35 50 0-25 35-50 0Z"/><path d="M0-105v-40m-100 145-35 10m235-10 35 10"/></g>
+<text x="700" y="510" text-anchor="middle" fill="#6f513d" font-family="Caveat, cursive" font-size="92">Cả hội mình ở đây nha</text>
+<text x="700" y="575" text-anchor="middle" fill="#9b8065" font-family="Georgia,serif" font-size="22" letter-spacing="5">MỘT TẤM ẢNH CHỤP CHUNG THẬT ĐẸP</text>
+</svg>
